@@ -1,0 +1,175 @@
+﻿/*
+    HTML and CSS Assignment
+    Course: CIS 665
+    Developer: GANG YANG
+    Date: 2023-02-10
+
+*/
+@charset "utf-8";
+
+@font-face {
+   font-family: Quicksand;
+   src: url('Quicksand-Regular.woff') format('woff'),
+        url('Quicksand-Regular.ttf') format('truetype');
+}
+
+
+/* HTML and Body Styles */
+
+html {
+   background: url(RomeCity.jpg);
+   background-size: cover;
+   background-attachment:fixed;
+
+}
+
+body {
+   color: rgb(91, 91, 91);
+   background-color: ivory;
+   font-family: Verdana, Geneva, sans-serif;
+}
+
+header {
+    background: linear-gradient(to bottom, black 70%, rgb(179, 20, 25));
+    border-bottom: 3px solid rgb(0, 0, 0);
+}
+/* Heading Styles */
+nav#menu ul {
+    /*background: rgb(179, 20, 25);*/
+    vertical-align: top;
+    text-align: center;
+}
+nav#menu ul li {
+     font-size: 2em;
+}
+
+nav#menu ul li a {
+     color: wheat;
+}
+
+nav#menu ul li a:hover {
+     color: green;
+     background-color: rgb(153, 83, 6);
+ }
+
+h1 {
+   font-size: 1.5em;
+   font-weight: bolder;
+}
+
+h2 {
+   font-size: 1.5em;
+}
+
+h1, h2 {
+   font-family: Quicksand, Verdana, Geneva, sans-serif;
+   letter-spacing: 0.1em;
+}
+
+article#Rome h1 {
+   color: white;
+   background-color: rgb(222, 128, 60);
+}
+
+article#Rome h2 {
+   color: white;
+   background-color: rgb(235, 177, 131);
+}
+
+
+/* Navigation Styles */
+body > nav h1 {
+    color: black;
+}
+
+body > nav > ul li {
+    line-height: 2em;
+    font-size: 1.2em;
+    font-weight: 200;
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+/*nav > ul > li.newgroup {
+   margin-top: 20px;
+}*/
+
+nav > ul > li > a:link, nav > ul > li > a:visited {
+   color: violet;
+   text-decoration: none;
+}
+
+nav > ul > li > a:hover, nav > ul > li > a:active {
+   color: green;
+   text-decoration: underline;
+}
+
+table.programs {
+    font-family: Arial, Verdana, sans-serif;
+    width: 100%;
+    /*border: 15px;*/
+    border-style: outset;
+    border-color: rgb(151,151,151);
+    border-collapse: collapse;
+}
+
+
+tr {
+    line-height: 18px;
+}
+
+th, td {
+    font-size: 0.8em;
+    border: 1px solid;
+    border-color: black;
+    vertical-align: central;
+    }
+/* Table Column Styles */
+
+col.category {
+    width: 10%;
+    background-color: rgb(215,205,151);
+}
+
+col.lowSeason {
+    width: 8%;
+    background-color: rgb(236,255,211);
+}
+
+
+col.peakSeason {
+    width: 8%;
+    background-color: rgb(250 12 12);
+}
+
+
+/* Table Header styles */
+
+thead {
+    color: white;
+    background-color: rgb(105,177,60);
+}
+
+    thead th:first-of-type {
+        background-color: rgb(153,86,7);
+    }
+
+    thead th:nth-of-type(7), thead th:nth-of-type(8), thead th:nth-of-type(9), thead th:nth-of-type(10) {
+        background-color: rgb(153,0,153);
+    }
+
+tfoot {
+    color: white;
+    background-color: black;
+}
+
+
+
+body > footer address {
+   background-color: rgb(222,128,60);
+   color: rgba(255, 255, 255, 0.7);
+   font: normal small-caps bold 0.9em/3em
+         Quicksand, Verdana, Geneva, sans-serif;
+   text-align: center;
+}
+
